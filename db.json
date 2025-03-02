@@ -2,44 +2,39 @@
   "messages": [
     {
       "role": "user",
-      "content": "what was the weather yesterday?",
-      "id": "fed1f7ef-5d07-4886-9081-394cafb00f54",
-      "createdAt": "2025-03-02T20:50:15.249Z"
+      "content": "how is the weather?",
+      "id": "9a9b28cc-eb9c-463a-985a-0711d7c74ed4",
+      "createdAt": "2025-03-02T21:41:38.113Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Could you please specify the location for which you would like to know the weather?",
+      "refusal": null,
+      "id": "f426b8a0-0b6a-45a8-b4ab-fb5d1c98bdca",
+      "createdAt": "2025-03-02T21:41:38.776Z"
     },
     {
       "role": "user",
-      "content": "what was the weather yesterday?",
-      "id": "79fc45ec-155f-49de-84e9-39d3977c3d4b",
-      "createdAt": "2025-03-02T20:51:19.723Z"
-    },
-    {
-      "role": "user",
-      "content": "what was the weather yesterday?",
-      "id": "6ee7325f-2f84-4704-9107-3cf39db8976e",
-      "createdAt": "2025-03-02T20:52:08.422Z"
-    },
-    {
-      "role": "user",
-      "content": "what was the weather yesterday?",
-      "id": "cebd6cd9-24a5-48c1-82f7-8c21bebbd9f6",
-      "createdAt": "2025-03-02T20:54:59.669Z"
+      "content": "how is the weather in New York?",
+      "id": "9ffa4300-3562-4eb1-bffb-dcf57ad02a14",
+      "createdAt": "2025-03-02T21:45:12.227Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_vmj3acbhzq810syvGAFsZFWZ",
+          "id": "call_I7cIaCLiEU1T7JRFaf9AmfBt",
           "type": "function",
           "function": {
             "name": "get_weather",
-            "arguments": "{}"
+            "arguments": "{\"reasoning\":\"User requested current weather information for New York.\"}"
           }
         }
       ],
       "refusal": null,
-      "id": "efd65d1f-451c-4b1c-96aa-93598f6add26",
-      "createdAt": "2025-03-02T20:55:00.160Z"
+      "id": "9fe2bc83-ec57-4644-9847-d4dc7aad4056",
+      "createdAt": "2025-03-02T21:45:12.799Z"
     }
   ]
 }
