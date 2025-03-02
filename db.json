@@ -2,40 +2,34 @@
   "messages": [
     {
       "role": "user",
-      "content": "what is the weather today?",
-      "id": "3740fc7b-5f50-4408-8b8e-b49d74764166",
-      "createdAt": "2025-03-02T20:36:24.396Z"
+      "content": "what was the weather yesterday?",
+      "id": "fed1f7ef-5d07-4886-9081-394cafb00f54",
+      "createdAt": "2025-03-02T20:50:15.249Z"
     },
     {
       "role": "user",
-      "content": "what is the weather today?",
-      "id": "095adbce-ad80-4cf1-be03-b385b2dd530e",
-      "createdAt": "2025-03-02T20:36:53.605Z"
+      "content": "what was the weather yesterday?",
+      "id": "79fc45ec-155f-49de-84e9-39d3977c3d4b",
+      "createdAt": "2025-03-02T20:51:19.723Z"
     },
     {
       "role": "user",
-      "content": "what is the weather today?",
-      "id": "ad7a6927-6cf7-4f9b-8a29-ffadaf78931e",
-      "createdAt": "2025-03-02T20:39:34.707Z"
+      "content": "what was the weather yesterday?",
+      "id": "6ee7325f-2f84-4704-9107-3cf39db8976e",
+      "createdAt": "2025-03-02T20:52:08.422Z"
     },
     {
       "role": "user",
-      "content": "what is the weather today?",
-      "id": "08247777-9eac-445f-9f3c-3f86ff07e99b",
-      "createdAt": "2025-03-02T20:40:16.443Z"
-    },
-    {
-      "role": "user",
-      "content": "what is the weather today?",
-      "id": "f2c6411a-30bd-4bb9-909d-73894bda4d6d",
-      "createdAt": "2025-03-02T20:44:21.456Z"
+      "content": "what was the weather yesterday?",
+      "id": "cebd6cd9-24a5-48c1-82f7-8c21bebbd9f6",
+      "createdAt": "2025-03-02T20:54:59.669Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_cb2ebfTjysiOP1pb5TDt9AE1",
+          "id": "call_vmj3acbhzq810syvGAFsZFWZ",
           "type": "function",
           "function": {
             "name": "get_weather",
@@ -44,8 +38,8 @@
         }
       ],
       "refusal": null,
-      "id": "7f999518-e304-4efb-a92c-54ea70c04f3d",
-      "createdAt": "2025-03-02T20:44:22.003Z"
+      "id": "efd65d1f-451c-4b1c-96aa-93598f6add26",
+      "createdAt": "2025-03-02T20:55:00.160Z"
     }
   ]
 }

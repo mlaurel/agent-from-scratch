@@ -8,7 +8,7 @@ export const runAgent = async ({ userMessage, tools }: { userMessage: string, to
     await addMessages([{ role: 'user', content: userMessage }])
     const loader = showLoader('🤔')
     const history = await getMessages()
-    const response = await runLLM({ messages: [...history], tools })
+    const response = await runLLM({ messages: history, tools })
 
     if (response.tool_calls) {
         console.log(response.tool_calls)
