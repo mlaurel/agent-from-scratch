@@ -2,26 +2,33 @@
   "messages": [
     {
       "role": "user",
-      "content": "how is the weather?",
-      "id": "9b6e5ffd-56da-4042-a503-d292cd79d093",
-      "createdAt": "2024-11-05T19:34:16.767Z"
+      "content": "how is the weather in New York?",
+      "id": "d4034e89-cbcd-4005-9a63-e22418c2273a",
+      "createdAt": "2025-03-02T23:40:34.312Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_Pd2L6OWnviQmRf7RicWtvE6Y",
+          "id": "call_05doINfYi0S4Ue1VIDLjURZz",
           "type": "function",
           "function": {
-            "name": "get_stuff",
-            "arguments": "{\"reasoning\":\"To provide accurate weather information.\"}"
+            "name": "get_weather",
+            "arguments": "{\"reasoning\":\"To provide the current weather information for New York.\"}"
           }
         }
       ],
       "refusal": null,
-      "id": "7c3e8fdd-f7f8-4103-9ac4-a361671aca41",
-      "createdAt": "2024-11-05T19:34:17.996Z"
+      "id": "24d90efa-c908-40e8-a0da-fe87630d191c",
+      "createdAt": "2025-03-02T23:40:35.040Z"
+    },
+    {
+      "role": "tool",
+      "content": "its hot like 96degs in the shade",
+      "tool_call_id": "call_05doINfYi0S4Ue1VIDLjURZz",
+      "id": "bdec0d1a-4961-4767-bd6a-cde23f8d4171",
+      "createdAt": "2025-03-02T23:40:35.040Z"
     }
   ]
 }
