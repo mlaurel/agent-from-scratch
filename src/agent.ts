@@ -4,7 +4,7 @@ import { runLLM } from './llm';
 import { logMessage, showLoader } from "./ui";
 
 
-export const runAgent = async (({ userMessage, tools }: { userMessage: string, tools: any[] }) => {
+export const runAgent = async ({ userMessage, tools }: { userMessage: string, tools: any[] }) => {
     await addMessages([{ role: 'user', content: userMessage }])
     const loader = showLoader('🤔')
     const history = await getMessages()
@@ -15,8 +15,8 @@ export const runAgent = async (({ userMessage, tools }: { userMessage: string, t
     };
 
     // await addMessages([{ role: 'assistant', content: response }])
-    await addMessages(response)
+    await addMessages([response])
     logMessage(response)
     loader.stop()
     return getMessages()
-})
+}

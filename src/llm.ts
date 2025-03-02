@@ -9,9 +9,8 @@ export const runLLM = async ({ messages, tools }: { messages: AIMessage[], tools
         temperature: 0.1,
         messages,
         tools: formattedTools,
-        // tool_choice: { type: 'function', function: { name: 'get_current_weater'}},
-        tool_choice: 'auto'
-        parallel_tool_execution: false,
+        tool_choice: 'auto',
+        parallel_tool_calls: false,
     })
 
     return response.choices[0].message;

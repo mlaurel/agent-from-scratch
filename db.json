@@ -2,195 +2,50 @@
   "messages": [
     {
       "role": "user",
-      "content": "what is my name?",
-      "id": "feb2749f-5327-44b6-b29c-e4b68bd07f00",
-      "createdAt": "2025-03-02T04:38:41.792Z"
+      "content": "what is the weather today?",
+      "id": "3740fc7b-5f50-4408-8b8e-b49d74764166",
+      "createdAt": "2025-03-02T20:36:24.396Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather today?",
+      "id": "095adbce-ad80-4cf1-be03-b385b2dd530e",
+      "createdAt": "2025-03-02T20:36:53.605Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather today?",
+      "id": "ad7a6927-6cf7-4f9b-8a29-ffadaf78931e",
+      "createdAt": "2025-03-02T20:39:34.707Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather today?",
+      "id": "08247777-9eac-445f-9f3c-3f86ff07e99b",
+      "createdAt": "2025-03-02T20:40:16.443Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather today?",
+      "id": "f2c6411a-30bd-4bb9-909d-73894bda4d6d",
+      "createdAt": "2025-03-02T20:44:21.456Z"
     },
     {
       "role": "assistant",
-      "content": "I'm sorry, but I don't have access to personal information about you unless you share it with me. How can I assist you today?",
-      "id": "34c710f1-22ef-479a-8c54-b0710b2ed7a6",
-      "createdAt": "2025-03-02T04:38:42.337Z"
-    },
-    {
-      "role": "user",
-      "content": "my name is Gene Ween",
-      "id": "10bc8c5f-f300-4657-a9f6-e3bea7afd9fb",
-      "createdAt": "2025-03-02T04:38:51.521Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Nice to meet you, Gene Ween! How can I assist you today?",
-      "id": "e4a3f05e-27b7-40d8-9f90-13472ce6cde9",
-      "createdAt": "2025-03-02T04:38:52.016Z"
-    },
-    {
-      "role": "user",
-      "content": "what is my name again?",
-      "id": "bf211ff7-9c52-4d28-82a8-f50c68c1db02",
-      "createdAt": "2025-03-02T04:39:07.760Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Your name is Gene Ween. How can I help you today, Gene?",
-      "id": "9c0c4fc3-6029-4093-9a80-00fba178286f",
-      "createdAt": "2025-03-02T04:39:08.643Z"
-    },
-    {
-      "role": "user",
-      "content": "what is my name?",
-      "id": "d2dacbf6-4601-4084-9b53-80f0ebdac7ec",
-      "createdAt": "2025-03-02T04:43:14.049Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Your name is Gene Ween. How can I assist you further?",
-      "id": "7aaae523-7be2-43e5-ba63-815ad2b38da5",
-      "createdAt": "2025-03-02T04:43:14.620Z"
-    },
-    {
-      "role": "user",
-      "content": "Actually, my name is Isla",
-      "id": "1b25f501-e219-40e9-a80c-a7564f33718e",
-      "createdAt": "2025-03-02T04:43:28.338Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Nice to meet you, Isla! How can I assist you today?",
-      "id": "3f0b5deb-6d91-4b14-b16a-7e657d3736a0",
-      "createdAt": "2025-03-02T04:43:28.956Z"
-    },
-    {
-      "role": "user",
-      "content": "what is my name again?",
-      "id": "f641faac-9196-4a08-9e97-df66382718a7",
-      "createdAt": "2025-03-02T04:43:47.772Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Your name is Isla. How can I help you today?",
-      "id": "58e6e431-0802-4a77-9bcd-99dc304f47aa",
-      "createdAt": "2025-03-02T04:43:48.313Z"
-    },
-    {
-      "role": "user",
-      "content": "how many hamsters are in the world today?",
-      "id": "37bd2b73-8ab2-490e-abcc-27a1ee65a0d4",
-      "createdAt": "2025-03-02T04:44:16.229Z"
-    },
-    {
-      "role": "assistant",
-      "content": "It's difficult to determine the exact number of hamsters in the world, as they are kept as pets in many households and also exist in the wild. Pet hamster populations can vary widely by region and country. Additionally, there are several species of hamsters, including the Syrian hamster, dwarf hamsters, and others, each with their own populations.\n\nIf you're looking for a rough estimate, it's safe to say that millions of hamsters are kept as pets worldwide, but precise numbers are not readily available. If you have a specific context in mind (like pet hamsters or wild hamsters), please let me know!",
-      "id": "9f22d45d-88c1-46bb-bdae-cb3ed350340c",
-      "createdAt": "2025-03-02T04:44:18.102Z"
-    },
-    {
-      "role": "user",
-      "content": "my hamsters name is Numbus, and he is chubby",
-      "id": "02275538-cc8b-40a5-b904-7d119e92d75e",
-      "createdAt": "2025-03-02T04:44:47.002Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Nimbus sounds adorable! Chubby hamsters can be quite charming. How long have you had him?",
-      "id": "7b46a044-deaa-4f2e-a473-0984f8624ac9",
-      "createdAt": "2025-03-02T04:44:47.595Z"
-    },
-    {
-      "role": "user",
-      "content": "Nimbus is a Winter White hamster.",
-      "id": "7b46a044-deaa-4f2e-a473-0984f86247c9",
-      "createdAt": "2025-03-01T04:44:47.595Z"
-    },
-    {
-      "role": "user",
-      "content": "what type of hamseter is Nimbus?",
-      "id": "4b7fe96b-2d59-47de-bbd3-065d1115d2eb",
-      "createdAt": "2025-03-02T04:46:47.865Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Nimbus is a Winter White hamster, which is a type of dwarf hamster. They are known for their friendly nature and beautiful fur, which can change color in the winter to a snowy white. Winter Whites are typically smaller than Syrian hamsters and can be quite playful. How is Nimbus's personality?",
-      "id": "931f633c-9ee9-414c-b7a2-4df09102fb32",
-      "createdAt": "2025-03-02T04:46:49.015Z"
-    },
-    {
-      "role": "user",
-      "content": "show me a picture of a Winder White hamster",
-      "id": "742fbada-6586-40a9-b06b-3e9e7a30d44b",
-      "createdAt": "2025-03-02T04:48:16.668Z"
-    },
-    {
-      "role": "assistant",
-      "content": "I'm unable to display images directly. However, you can easily find pictures of Winter White hamsters by doing a quick image search online. Just type \"Winter White hamster\" into your preferred search engine, and you'll see plenty of adorable photos! If you have any other questions about them, feel free to ask!",
-      "id": "c67c2565-6b3f-49f0-96e3-08a9dd084553",
-      "createdAt": "2025-03-02T04:48:18.223Z"
-    },
-    {
-      "role": "user",
-      "content": "can you give me a link to one?",
-      "id": "fe71735e-ece8-4097-b882-5c7dba3d8e07",
-      "createdAt": "2025-03-02T04:48:44.186Z"
-    },
-    {
-      "role": "assistant",
-      "content": "I can't browse the internet or provide direct links. However, you can find images of Winter White hamsters by searching \"Winter White hamster\" on popular image search engines like Google Images or websites like Pinterest. Just enter the term in the search bar, and you should find plenty of pictures! If you have any other questions or need more information, feel free to ask!",
-      "id": "c9d779a2-9beb-460f-bc42-043d64f1f5cb",
-      "createdAt": "2025-03-02T04:48:45.570Z"
-    },
-    {
-      "role": "user",
-      "content": "here is a link to what Nimbus looks like: https://upload.wikimedia.org/wikipedia/commons/7/7a/PhodopusSungorus_1.jpg  ",
-      "id": "fe71735e-ece8-4097-b882-5c7dba3d9e07",
-      "createdAt": "2025-03-01T04:48:44.186Z"
-    },
-    {
-      "role": "user",
-      "content": "can you give me a link of what Nimbus looks like?",
-      "id": "8a7f449f-da91-41d5-9c35-41083330f0bf",
-      "createdAt": "2025-03-02T04:50:32.649Z"
-    },
-    {
-      "role": "assistant",
-      "content": "I can't browse the internet or provide direct links to specific images. However, you can use the link you provided to see what a Winter White hamster looks like. If you're looking for more images, you can search for \"Winter White hamster\" in an image search engine. If you have any other questions or need further assistance, feel free to ask!",
-      "id": "ba203d42-63bd-4c52-a653-28eb39bb410f",
-      "createdAt": "2025-03-02T04:50:34.594Z"
-    },
-    {
-      "role": "user",
-      "content": "do you know of a link for what Nimbus looks like",
-      "id": "5f87cab9-af5f-42e8-90d3-03e76f9e9a01",
-      "createdAt": "2025-03-02T04:50:56.902Z"
-    },
-    {
-      "role": "assistant",
-      "content": "I can't browse the internet or provide direct links to specific images. However, you can easily find images of Winter White hamsters by searching for \"Winter White hamster\" on websites like Google Images or Wikipedia. \n\nIf you're looking for a specific type of image, you can use the link you shared earlier, which is a great example of what a Winter White hamster looks like: [Winter White Hamster](https://upload.wikimedia.org/wikipedia/commons/7/7a/PhodopusSungorus_1.jpg). \n\nIf you have any other questions or need more information, feel free to ask!",
-      "id": "17fad05c-256d-4dd5-80fb-13f8711704a0",
-      "createdAt": "2025-03-02T04:50:59.141Z"
-    },
-    {
-      "role": "user",
-      "content": "hey hey",
-      "id": "60037cfe-5b65-48d8-b3b9-edb6ca7e7040",
-      "createdAt": "2025-03-02T18:16:16.351Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Hey! How's it going? What can I do for you today?",
-      "id": "53b32352-aa64-4582-8fad-5acdc22f4612",
-      "createdAt": "2025-03-02T18:16:17.465Z"
-    },
-    {
-      "role": "user",
-      "content": "how confident on a scale of 1 to 10, are you that my name is Sheila?",
-      "id": "d3f6fe73-3091-4b06-bce2-fb182dd6c509",
-      "createdAt": "2025-03-02T18:33:50.119Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Based on our previous conversation, I know your name is Isla, not Sheila. So, I would say my confidence is a 1 regarding that name. If you have any other questions or topics you'd like to discuss, feel free to let me know!",
-      "id": "ff8603c6-fdf9-42c3-8603-3f824bb99399",
-      "createdAt": "2025-03-02T18:33:51.307Z"
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_cb2ebfTjysiOP1pb5TDt9AE1",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "id": "7f999518-e304-4efb-a92c-54ea70c04f3d",
+      "createdAt": "2025-03-02T20:44:22.003Z"
     }
   ]
 }
