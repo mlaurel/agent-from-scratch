@@ -3,6 +3,7 @@ import { openai } from './ai'
 import { zodFunction } from 'openai/helpers/zod'
 
 export const runLLM = async ({
+  model = 'gpt-4o-mini',
   messages,
   tools,
 }: {
@@ -10,7 +11,6 @@ export const runLLM = async ({
   tools: any[]
 }) => {
   const formattedTools = tools.map(zodFunction)
-
   const response = await openai.chat.completions.create({
     model: 'gpt-4o-mini',
     temperature: 0.1,
