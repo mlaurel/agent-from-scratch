@@ -2,145 +2,89 @@
   "messages": [
     {
       "role": "user",
-      "content": "how is the weather in New York?",
-      "id": "0a0ef974-8021-4867-8548-468b11a129e7",
-      "createdAt": "2025-03-04T01:35:26.509Z"
+      "content": "what is the weather?",
+      "id": "cc2daabb-d616-483b-947e-37c59e1beb2f",
+      "createdAt": "2025-03-07T19:05:28.622Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Could you please specify the location for which you would like to know the weather?",
+      "refusal": null,
+      "id": "4affc5b9-7334-4ba7-8016-3bda2281f35f",
+      "createdAt": "2025-03-07T19:05:30.108Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather in New York?",
+      "id": "ff945424-4e76-40bb-857d-d9fb393e4069",
+      "createdAt": "2025-03-07T19:05:35.833Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_rYDufHsKVUzXNDtFeulEMttZ",
+          "id": "call_6CEfjXeMRvNT6plNE4tQ2MbC",
           "type": "function",
           "function": {
             "name": "get_weather",
-            "arguments": "{\"reasoning\":\"To provide the most accurate and current weather information for New York.\"}"
+            "arguments": "{\"reasoning\":\"User requested the current weather in New York.\"}"
           }
         }
       ],
       "refusal": null,
-      "id": "7e8cb693-32b0-4a3b-849f-7065dcc7f9cf",
-      "createdAt": "2025-03-04T01:35:27.822Z"
+      "id": "0cc5e4e1-5598-431a-8ba1-e2a2ba2e48c8",
+      "createdAt": "2025-03-07T19:05:36.460Z"
     },
     {
       "role": "tool",
       "content": "its hot like 96degs in the shade",
-      "tool_call_id": "call_rYDufHsKVUzXNDtFeulEMttZ",
-      "id": "11984742-d79f-463a-b7ba-1fef449663c6",
-      "createdAt": "2025-03-04T01:35:27.824Z"
+      "tool_call_id": "call_6CEfjXeMRvNT6plNE4tQ2MbC",
+      "id": "e7e31f14-f3c8-4c58-a193-d6f8be1a9494",
+      "createdAt": "2025-03-07T19:05:36.462Z"
     },
     {
       "role": "user",
-      "content": "how is the weather in chicago?",
-      "id": "f3888105-8a6b-47de-bf54-76f487bc8040",
-      "createdAt": "2025-03-04T01:36:38.145Z"
+      "content": "What was the weather again?",
+      "id": "79c22685-5532-448a-9f83-305ac476a712",
+      "createdAt": "2025-03-07T19:07:25.142Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The weather in New York is currently hot, with a temperature of about 96 degrees Fahrenheit in the shade.",
+      "refusal": null,
+      "id": "c5093c9d-ada3-48be-b84a-956cfce4a216",
+      "createdAt": "2025-03-07T19:07:26.260Z"
+    },
+    {
+      "role": "user",
+      "content": "But what is the weather now\n",
+      "id": "049cf931-6f67-4427-b468-717dde0e9f44",
+      "createdAt": "2025-03-07T19:29:40.231Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_EG09jaF89CG100xtjcFqHttF",
+          "id": "call_UZDVO3XPWoHApL9hWTefgRlj",
           "type": "function",
           "function": {
             "name": "get_weather",
-            "arguments": "{\"reasoning\":\"To provide the most accurate and current weather information for Chicago.\"}"
+            "arguments": "{\"reasoning\":\"User is asking for the current weather in New York.\"}"
           }
         }
       ],
       "refusal": null,
-      "id": "2e025c5b-1f8e-4dfa-a594-0eb5917ae0d8",
-      "createdAt": "2025-03-04T01:36:38.883Z"
+      "id": "872a8744-d513-4d5e-8b14-3e8ee6040723",
+      "createdAt": "2025-03-07T19:29:41.095Z"
     },
     {
       "role": "tool",
       "content": "its hot like 96degs in the shade",
-      "tool_call_id": "call_EG09jaF89CG100xtjcFqHttF",
-      "id": "d70430fd-3bf1-4672-a669-928877726fe9",
-      "createdAt": "2025-03-04T01:36:38.884Z"
-    },
-    {
-      "role": "user",
-      "content": "how old is Mike?",
-      "id": "d441306b-2889-400a-8fba-1978369f582e",
-      "createdAt": "2025-03-04T01:36:54.660Z"
-    },
-    {
-      "role": "assistant",
-      "content": "I would need more information about which Mike you are referring to in order to provide an answer. Could you please specify?",
-      "refusal": null,
-      "id": "e7bfb144-8708-4e1f-8089-83e0912a1084",
-      "createdAt": "2025-03-04T01:36:55.523Z"
-    },
-    {
-      "role": "user",
-      "content": "how old the Vice President?",
-      "id": "79d5f0db-d4d2-423f-8136-fb3c6e09ce2b",
-      "createdAt": "2025-03-04T01:37:47.189Z"
-    },
-    {
-      "role": "assistant",
-      "content": "As of October 2023, Kamala Harris, the Vice President of the United States, was born on October 20, 1964. This means she is currently 58 years old and will turn 59 in a few days.",
-      "refusal": null,
-      "id": "b9c75c84-0431-4c0c-888f-59667af46ef7",
-      "createdAt": "2025-03-04T01:37:48.903Z"
-    },
-    {
-      "role": "user",
-      "content": "Mike is 53",
-      "id": "a62cc9de-9fc4-4916-afe0-adcc1cdcada4",
-      "createdAt": "2025-03-04T01:38:43.302Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Thank you for the information! So, Mike is 53 years old. If you have any other questions or need further assistance, feel free to ask!",
-      "refusal": null,
-      "id": "87b79fe3-f16f-4562-8122-0f79d905dd86",
-      "createdAt": "2025-03-04T01:38:44.123Z"
-    },
-    {
-      "role": "user",
-      "content": "how old is Mike?",
-      "id": "c60b59af-723a-4efa-ba8c-6e6a1cdc7167",
-      "createdAt": "2025-03-04T01:38:56.559Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Mike is 53 years old.",
-      "refusal": null,
-      "id": "7d475933-6bf7-4155-b455-6712962ac9b8",
-      "createdAt": "2025-03-04T01:38:57.114Z"
-    },
-    {
-      "role": "user",
-      "content": "how is the weather in San Diego?",
-      "id": "25952add-07fc-40b8-9464-339bd4937084",
-      "createdAt": "2025-03-04T01:39:15.473Z"
-    },
-    {
-      "role": "assistant",
-      "content": null,
-      "tool_calls": [
-        {
-          "id": "call_VepflXxwYUedhIElP8YUmBmF",
-          "type": "function",
-          "function": {
-            "name": "get_weather",
-            "arguments": "{\"reasoning\":\"To provide the most accurate and current weather information for San Diego.\"}"
-          }
-        }
-      ],
-      "refusal": null,
-      "id": "8d357fe4-8c03-4364-81f8-703d0c9b7fcc",
-      "createdAt": "2025-03-04T01:39:20.465Z"
-    },
-    {
-      "role": "tool",
-      "content": "its hot like 96degs in the shade",
-      "tool_call_id": "call_VepflXxwYUedhIElP8YUmBmF",
-      "id": "eebe7d00-722e-4e3e-a611-0bab171daa94",
-      "createdAt": "2025-03-04T01:39:20.466Z"
+      "tool_call_id": "call_UZDVO3XPWoHApL9hWTefgRlj",
+      "id": "fd865fd1-a8df-402b-bf4a-863027a1ee34",
+      "createdAt": "2025-03-07T19:29:41.096Z"
     }
   ]
 }

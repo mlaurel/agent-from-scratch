@@ -18,15 +18,16 @@ export const runAgent = async ({
 
     const response = await runLLM({ messages: history, tools })
     await addMessages([response])
-
+    
+    
     if (response.tool_calls) {
         const toolCall = response.tool_calls[0]
         const toolResponse = await runTool(toolCall, userMessage)
         // console.log(`toolResponse is: ${toolResponse}`);
         await saveToolResponse(toolCall.id, toolResponse)
-        loader.update(`done: ${toolCall.function.name}`)
+        loader.update(`executing: ${toolCall.function.name}`)
     }
-
+    
     logMessage(response)
     loader.stop()
     return getMessages()
