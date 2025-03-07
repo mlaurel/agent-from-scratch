@@ -1,17 +1,1 @@
-{
-  "messages": [
-    {
-      "role": "user",
-      "content": "hi",
-      "id": "075d1ec7-06ca-4ca2-96a7-789bac07b7c1",
-      "createdAt": "2025-03-07T20:15:06.221Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Hello! How can I assist you today?",
-      "refusal": null,
-      "id": "a4b5e0bc-ca40-4d04-b4c3-f17c425903b7",
-      "createdAt": "2025-03-07T20:15:07.125Z"
-    }
-  ]
-}
+{"messages": []}
