@@ -1,7 +1,6 @@
-import openai from 'openai'
-import { z } from 'zod'
 import type { ToolFn } from '../../types'
-import fetch from 'node-fetch'
+import { z } from 'zod'
+import { openai } from '../ai'
 
 export const generateImageToolDefinition = {
     name: 'generate_image',
@@ -13,7 +12,7 @@ export const generateImageToolDefinition = {
 
 type Args = z.infer<typeof generateImageToolDefinition.parameters>
 
-export const generateImage: ToolFn<Args> = async ({
+export const generateImage: ToolFn<Args, string> = async ({
     toolArgs,
     userMessage
 }) => {
