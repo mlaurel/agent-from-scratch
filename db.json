@@ -1,1 +1,51 @@
-{"messages": []}
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "make me a meme from a random dad joke",
+      "id": "e0e2bad4-80cd-42ff-b3e4-184a01c84000",
+      "createdAt": "2025-03-07T21:33:53.118Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_EiSGVKuscGkoXUx6Al7DKb6w",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "id": "0bf494fb-7596-404e-b83a-2433448b9ddf",
+      "createdAt": "2025-03-07T21:33:54.162Z"
+    },
+    {
+      "role": "tool",
+      "content": "Why did the melons plan a big wedding? Because they cantaloupe!",
+      "tool_call_id": "call_EiSGVKuscGkoXUx6Al7DKb6w",
+      "id": "351b2b2f-7243-45c2-864a-0bbd1427554c",
+      "createdAt": "2025-03-07T21:33:54.506Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_hNvKMMOElNn9W6V3nDt2QtCQ",
+          "type": "function",
+          "function": {
+            "name": "generate_image",
+            "arguments": "{\"prompt\":\"A humorous meme featuring a cartoon of two melons dressed in wedding attire, looking excited. The top text reads: 'Why did the melons plan a big wedding?' The bottom text reads: 'Because they cantaloupe!' The background is a colorful wedding scene with flowers and decorations.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "id": "8dab60c0-3010-422b-ab7d-f93734a37103",
+      "createdAt": "2025-03-07T21:33:56.191Z"
+    }
+  ]
+}

@@ -1,17 +1,14 @@
 import type { AIMessage } from '../types'
 import { openai } from './ai'
 import { zodFunction } from 'openai/helpers/zod'
-import { tools } from './tools'
-
-const defaultTools = [tools.dad_joke.definition]
 
 export const runLLM = async ({
   model = 'gpt-4o-mini',
   messages,
-  tools = defaultTools,
+  tools,
 }: {
   messages: AIMessage[]
-  tools?: any[]
+  tools: any[]
 }) => {
   const formattedTools = tools.map(zodFunction)
   const response = await openai.chat.completions.create({
