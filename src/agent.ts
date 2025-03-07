@@ -23,11 +23,13 @@ export const runAgent = async ({
 
         if (response.content) {
             loader.stop()
+            logMessage(response)
             return getMessages()
         }
 
         if (response.tool_calls) {
             const toolCall = response.tool_calls[0]
+            logMessage(response)
             const toolResponse = await runTool(toolCall, userMessage)
             // console.log(`toolResponse is: ${toolResponse}`);
             await saveToolResponse(toolCall.id, toolResponse)
