@@ -1,28 +1,29 @@
 import type OpenAI from 'openai'
-import { generateImage } from './tools/generateImage'
-import { reddit } from './tools/reddit'
-import { dadJoke } from './tools/dadJoke'
+import { generateImage, generateImageToolDefinition } from './tools/generateImage'
+import { dadJoke, dadJokeToolDefinition } from './tools/dadJoke'
+import { reddit, redditToolDefinition } from './tools/reddit'
+
+const getWeather = () => `its hot like 96degs in the shade`
 
 export const runTool = async (
-  toolCall: OpenAI.Chat.Completions.ChatCompletionMessageToolCall,
-  userMessage: string
+    toolCall: OpenAI.Chat.Completions.CreateChatCompletionMessageToolCall,
+    userMessage: string,
 ) => {
-  const input = {
-    userMessage,
-    toolArgs: JSON.parse(toolCall.function.arguments),
-  }
-  switch (toolCall.function.name) {
-    case 'generate_image':
-      const image = await generateImage(input)
-      return image
+    const input = {
+        userMessage,
+        toolArgs: JSON.parse(toolCall.function.arguments || '{}'),
+    }
 
-    case 'dad_joke':
-      return dadJoke(input)
+    switch (toolCall.function.name) {
+        case generateImageToolDefinition.name:
+            return generateImage(input)
+        case dadJokeToolDefinition.name:
+            return dadJoke(input)
+        case redditToolDefinition.name:
+            return reddit(input)
 
-    case 'reddit':
-      return reddit(input)
+        default:
+            return `Never run this tool: ${toolCall.function.name} again, or else!`
+    }
 
-    default:
-      throw new Error(`Unknown tool: ${toolCall.function.name}`)
-  }
 }

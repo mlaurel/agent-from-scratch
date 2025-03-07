@@ -1,52 +1,39 @@
 import type { AIMessage } from '../types'
-import { runLLM } from './llm'
-import { z } from 'zod'
-import { runTool } from './toolRunner'
 import { addMessages, getMessages, saveToolResponse } from './memory'
-import { logMessage, showLoader } from './ui'
+import { runLLM } from './llm'
+import { showLoader, logMessage } from './ui'
+import { runTool } from './toolRunner'
 
 export const runAgent = async ({
-  turns = 10,
-  userMessage,
-  tools = [],
+    userMessage,
+    tools,
 }: {
-  turns?: number
-  userMessage: string
-  tools?: { name: string; parameters: z.AnyZodObject }[]
+    userMessage: string
+    tools: any[]
 }) => {
-  await addMessages([
-    {
-      role: 'user',
-      content: userMessage,
-    },
-  ])
+    await addMessages([{ role: 'user', content: userMessage }])
 
-  const loader = showLoader('Thinking...')
+    const loader = showLoader('🤔')
 
-  while (true) {
-    const history = await getMessages()
-    const response = await runLLM({
-      messages: history,
-      tools,
-    })
+    while(true) {
+        const history = await getMessages()
+        const response = await runLLM({ messages: history, tools })
 
-    await addMessages([response])
+        await addMessages([response])
 
-    logMessage(response)
+        if (response.content) {
+            loader.stop()
+            logMessage(response)
+            return getMessages()
+        }
 
-    if (response.content) {
-      loader.stop()
-      return getMessages()
-    }
-
-    if (response.tool_calls) {
-      const toolCall = response.tool_calls[0]
-      loader.update(`executing: ${toolCall.function.name}`)
-
-      const toolResponse = await runTool(toolCall, userMessage)
-      await saveToolResponse(toolCall.id, toolResponse)
-
-      loader.update(`executed: ${toolCall.function.name}`)
-    }
-  }
+        if (response.tool_calls) {
+            const toolCall = response.tool_calls[0]
+            logMessage(response)
+            const toolResponse = await runTool(toolCall, userMessage)
+            // console.log(`toolResponse is: ${toolResponse}`);
+            await saveToolResponse(toolCall.id, toolResponse)
+            loader.update(`done: ${toolCall.function.name}`)
+        }
+    }   
 }
