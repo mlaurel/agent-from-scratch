@@ -6,10 +6,10 @@ import { runTool } from './toolRunner'
 
 export const runAgent = async ({
     userMessage,
-    tools = [],
+    tools,
 }: {
     userMessage: string
-    tools?: any[]
+    tools: any[]
 }) => {
     await addMessages([{ role: 'user', content: userMessage }])
 
