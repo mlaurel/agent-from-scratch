@@ -14,7 +14,7 @@
     },
     {
       "role": "user",
-      "content": "My name is Scott",
+      "content": "My name is Gene Ween",
       "id": "a884ba5b-8ec3-482a-bd6c-18babe76ec05",
       "createdAt": "2024-11-05T17:40:28.739Z"
     },
@@ -23,6 +23,30 @@
       "content": "Nice to meet you, Scott! How can I assist you today?",
       "id": "70a9b0ae-a6ec-4523-a4dd-81ce5c27e080",
       "createdAt": "2024-11-05T17:40:29.361Z"
+    },
+    {
+      "role": "user",
+      "content": "what is my name?",
+      "id": "11f45b6d-4c4b-4352-8334-7ba4893155f0",
+      "createdAt": "2025-03-15T03:22:30.936Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Your name is Scott. How can I help you today, Scott?",
+      "id": "6475c93f-5827-43e7-869e-0ac9faad2540",
+      "createdAt": "2025-03-15T03:22:35.642Z"
+    },
+    {
+      "role": "user",
+      "content": "what is my name?",
+      "id": "b23c1bdb-09c1-4387-951c-16a44544311f",
+      "createdAt": "2025-03-15T03:23:02.486Z"
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned that your name is Gene Ween. How can I assist you today, Gene?",
+      "id": "cde1677a-e19a-4fd0-993c-a6d187daea60",
+      "createdAt": "2025-03-15T03:23:03.355Z"
     }
   ]
 }
