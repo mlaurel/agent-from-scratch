@@ -17,5 +17,4 @@ export const runTool = async (
         default:
             throw new Error(`Unknown tool ${toolCall.function.name}`)
     }
-
 }
