@@ -1,5 +1,8 @@
 import type OpenAI from 'openai'
-import { generateImage, generateImageToolDefinition } from './tools/generateImage'
+import {
+    generateImage,
+    generateImageToolDefinition,
+} from './tools/generateImage'
 import { dadJoke, dadJokeToolDefinition } from './tools/dadJoke'
 import { reddit, redditToolDefinition } from './tools/reddit'
 
@@ -25,5 +28,4 @@ export const runTool = async (
         default:
             return `Never run this tool: ${toolCall.function.name} again, or else!`
     }
-
 }

@@ -13,11 +13,11 @@ type Args = z.infer<typeof dadJokeToolDefinition.parameters>
 export const dadJoke: ToolFn<Args> = async () => {
     const response = await fetch('https://icanhazdadjoke.com/', {
         headers: {
-            'Accept': 'application/json',
-            'User-Agent': 'agent-from-scratch (https://github.com/mlaurel/agent-from-scratch)'
-        }
+            Accept: 'application/json',
+            'User-Agent':
+                'agent-from-scratch (https://github.com/mlaurel/agent-from-scratch)',
+        },
     })
-    
-    return (await response.json()).joke    
 
+    return (await response.json()).joke
 }
